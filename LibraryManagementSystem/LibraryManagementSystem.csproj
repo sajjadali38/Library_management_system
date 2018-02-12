@@ -1,0 +1,189 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7685C9C5-40BF-414F-A732-4DD11D9114F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibraryManagementSystem</RootNamespace>
+    <AssemblyName>LibraryManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMember.Designer.cs">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksIssueToday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksIssueToday.Designer.cs">
+      <DependentUpon>BooksIssueToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BooksReturnToday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BooksReturnToday.Designer.cs">
+      <DependentUpon>BooksReturnToday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Issue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue.Designer.cs">
+      <DependentUpon>Issue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return.Designer.cs">
+      <DependentUpon>Return.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchByAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchByAuthor.Designer.cs">
+      <DependentUpon>SearchByAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataEntry.Designer.cs">
+      <DependentUpon>DataEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMS.Designer.cs">
+      <DependentUpon>LMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddMember.resx">
+      <DependentUpon>AddMember.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksIssueToday.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BooksIssueToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BooksReturnToday.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BooksReturnToday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Issue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Return.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchByAuthor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchByAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DataEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LMS.resx">
+      <DependentUpon>LMS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchByKeywords.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchByKeywords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBySubject.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchBySubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerchByTitle.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SerchByTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SearchByKeywords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchByKeywords.Designer.cs">
+      <DependentUpon>SearchByKeywords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchBySubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBySubject.Designer.cs">
+      <DependentUpon>SearchBySubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerchByTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerchByTitle.Designer.cs">
+      <DependentUpon>SerchByTitle.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
